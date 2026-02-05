@@ -715,11 +715,11 @@ def start():
                     if kb.postHint in (POST_HINT.SOAP, POST_HINT.XML):
                         if conf.skipXmlEncode:
                             errMsg += ". Also, you can try to rerun by omitting the "
-                            errMsg += "option '--skip-xml-encode' as the target may "
+                            errMsg += "option '--skip-xmlencode' as the target may "
                             errMsg += "require proper XML encoding of payload data"
                         else:
                             errMsg += ". Also, you can try to rerun by providing the "
-                            errMsg += "option '--skip-xml-encode' as the target may "
+                            errMsg += "option '--skip-xmlencode' as the target may "
                             errMsg += "not require XML encoding of payload data"
 
                     raise SqlmapNotVulnerableException(errMsg.rstrip('.'))
